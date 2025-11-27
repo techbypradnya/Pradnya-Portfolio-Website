@@ -1,9 +1,6 @@
 # 🌐 Personal Portfolio – Pradnya Pangavhane
+<img width="1324" height="637" alt="portfolio" src="https://github.com/user-attachments/assets/b46e09d0-847f-4475-b81d-83bbcb99dc2b" />
 
-![Portfolio Banner](<img width="1324" height="637" alt="portfolio" src="https://github.com/user-attachments/assets/76de72de-d2b1-4f9d-ba34-d329b39fa97e" />
-)
-<!-- Replace the file above with your actual banner image (recommended size: 1200×350).
-     Put the file at: src/assets/banner.jpg -->
 
 ## 👋 About the Project
 This is my personal portfolio website built using modern web technologies to showcase my **skills, projects, achievements, experience, education**, and **technical journey** as an **Electronics & Computer Engineering Student** and **AI/ML Enthusiast**.
