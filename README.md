@@ -15,7 +15,7 @@ The goal of this portfolio is to provide recruiters, collaborators, and the deve
 ---
 
 ## 🚀 Live Demo
-🔗 **Portfolio Website: ** https://pradnya-portfolio-website-tpb9.vercel.app
+🔗 **Portfolio Website:** https://pradnya-portfolio-website-tpb9.vercel.app
 🔗 **LinkedIn Profile:** https://www.linkedin.com/in/pradnya-pangavhane-446793289  
 🔗 **GitHub Profile:** https://github.com/pradnya-001  
 
