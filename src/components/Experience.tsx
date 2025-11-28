@@ -6,7 +6,7 @@ const Experience = () => {
     {
       role: "AI/ML Domain Expert",
       org: "AWS Cloud Club • Sanjivani College of Engineering",
-      duration: "2024 – Present",
+      duration: "2024",
       description:
         "Gained in-depth knowledge of Machine Learning, Generative AI, and Cloud technologies while working on real-world projects.",
       color: "from-purple-500 to-blue-500",
