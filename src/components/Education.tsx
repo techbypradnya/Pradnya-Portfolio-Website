@@ -25,7 +25,7 @@ const Education = () => {
       degree: "B.Tech in Electronics & Computer Engineering",
       school: "Sanjivani College of Engineering, Kopargaon",
       year: "2023 – 2027",
-      percentage: "CGPA — 9.33",
+      percentage: "CGPA — 9.43",
       description:
         "Blending intelligence, design, and engineering to build the technology of tomorrow",
       gradient: "from-purple-500 to-blue-500",
