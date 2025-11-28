@@ -68,8 +68,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'pradnya.pangavhane@example.com',
-      href: 'mailto:pradnya.pangavhane@example.com',
+      value: 'pradnyapangavhane5@gmail.com',
+      href: 'pradnyapangavhane5@gmail.com',
     },
     {
       icon: Phone,
