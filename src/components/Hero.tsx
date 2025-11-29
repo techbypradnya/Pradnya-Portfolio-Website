@@ -150,14 +150,14 @@ const Hero = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <a
-              href="/Pradnya_Pangavhane_CV.pdf"
-              download
-              className="px-8 py-3 font-semibold rounded-full gradient-purple-blue text-white shadow-lg shadow-purple-500/30 hover:scale-105 hover:shadow-purple-500/50 inline-flex items-center gap-2"
-            >
-              <FileDown className="w-5 h-5" />
-              Download My CV
-            </a>
+           <a
+  href="/Pradnya_Pangavhane_CV.pdf"
+  download="Pradnya_Pangavhane_CV.pdf"
+  className="px-8 py-3 font-semibold rounded-full gradient-purple-blue text-white shadow-lg shadow-purple-500/30 hover:scale-105 hover:shadow-purple-500/50 inline-flex items-center gap-2"
+>
+  <FileDown className="w-5 h-5" />
+  Download My CV
+</a>
           </div>
 
           {/* Scroll Down */}
