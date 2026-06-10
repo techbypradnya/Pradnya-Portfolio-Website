@@ -87,6 +87,15 @@ const Projects = () => {
     },
     {
       icon: Heart,
+      title: "Blood Connect Pro: Smart Blood Donation & Emergency Donor Finder",
+      description:
+        "Comprehensive full-stack blood donation platform with 5+ user roles (donor, hospital, blood bank, NGO, admin), secure JWT authentication, 10+ RESTful APIs, real-time donor management, responsive dashboards with SOS emergency workflows, and intelligent donor search with blood inventory tracking.",
+      tech: ["React.js", "Express.js", "Node.js", "MongoDB", "Tailwind CSS", "shadcn/ui", "JWT Auth", "REST APIs"],
+      gradient: "from-red-600 to-pink-500",
+      featured: true,
+    },
+    {
+      icon: Heart,
       title: "Gemini Health App",
       description:
         "AI-powered health application using Google Gemini API for personalized wellness recommendations and health insights.",
