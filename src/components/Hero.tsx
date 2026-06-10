@@ -6,8 +6,7 @@ import {
   Instagram,
   FileDown,
 } from "lucide-react";
-
-const myphoto = "/Pradnya_Profile.jpeg";
+import myphoto from "../assets/Pradnya_Profile.jpeg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
