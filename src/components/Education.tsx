@@ -73,51 +73,60 @@ const Education = () => {
           </p>
         </div>
 
-        <div className="relative">
+        <div className="relative pt-12 md:pt-16">
           {/* Timeline line - hidden on mobile */}
-          <div className="hidden md:block absolute top-0 left-1/2 right-0 h-1 bg-gradient-to-r from-purple-500 to-blue-500 opacity-30 rounded-full transform -translate-y-8"></div>
+          <div className="hidden md:block absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-blue-500 to-purple-500 opacity-30"></div>
 
-          {/* Education Cards */}
-          <div className="grid md:grid-cols-3 gap-8 relative">
+          {/* Education Cards Grid */}
+          <div className="grid md:grid-cols-3 gap-8">
             {educationData.map((edu, index) => (
               <div
                 key={index}
-                className={`transition-all duration-1000 ${
+                className={`relative group transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
-                {/* Timeline dot - desktop only */}
-                <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 -top-9 w-4 h-4 rounded-full bg-purple-600 shadow-xl border-4 border-white dark:border-gray-900 z-10"></div>
+                {/* Timeline dot - positioned above card on desktop */}
+                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 -top-7 z-20">
+                  <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 shadow-lg border-4 border-white dark:border-gray-900"></div>
+                </div>
 
-                {/* Card */}
-                <div className="glass p-8 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-                  {/* Icon */}
-                  <div
-                    className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${edu.gradient} flex items-center justify-center mb-6 shadow-lg`}
-                  >
-                    <edu.icon className="w-10 h-10 text-white" />
+                {/* Card with proper structure */}
+                <div className="glass p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 h-full flex flex-col">
+                  {/* Icon Container */}
+                  <div className="flex justify-center mb-6">
+                    <div
+                      className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${edu.gradient} flex items-center justify-center shadow-lg`}
+                    >
+                      <edu.icon className="w-10 h-10 text-white" />
+                    </div>
                   </div>
 
-                  {/* Degree */}
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-3 text-center">
-                    {edu.degree}
-                  </h3>
+                  {/* Content - grows to fill space */}
+                  <div className="flex-grow flex flex-col">
+                    {/* Degree */}
+                    <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-3 text-center leading-snug">
+                      {edu.degree}
+                    </h3>
 
-                  {/* School */}
-                  <p className="text-purple-600 dark:text-purple-300 font-semibold text-center mb-2">
-                    {edu.school}
-                  </p>
+                    {/* School */}
+                    <p className="text-purple-600 dark:text-purple-300 font-semibold text-center text-sm md:text-base mb-2">
+                      {edu.school}
+                    </p>
 
-                  {/* Year */}
-                  <p className="text-gray-500 dark:text-gray-400 text-sm font-medium text-center mb-4">
-                    {edu.year}
-                  </p>
+                    {/* Year */}
+                    <p className="text-gray-500 dark:text-gray-400 text-xs md:text-sm font-medium text-center mb-4">
+                      {edu.year}
+                    </p>
+                  </div>
 
                   {/* Percentage Badge */}
-                  <span className="inline-block w-full text-center px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-md mb-4">
-                    {edu.percentage}
-                  </span>
+                  <div className="mb-4">
+                    <span className="block w-full text-center px-4 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-md">
+                      {edu.percentage}
+                    </span>
+                  </div>
 
                   {/* Description */}
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm text-center">
