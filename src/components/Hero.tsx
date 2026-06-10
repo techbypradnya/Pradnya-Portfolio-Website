@@ -7,7 +7,7 @@ import {
   FileDown,
 } from "lucide-react";
 
-import myphoto from "../assets/Pradnya_Profile.jpeg";
+const myphoto = "/Pradnya_Profile.jpeg";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
