@@ -5,14 +5,19 @@ import { motion, AnimatePresence } from "framer-motion";
 import firstyear from "../assets/firstyear.jpg";
 import hsc1 from "../assets/hsc1.jpg";
 import hsc2 from "../assets/hsc2.jpg";
-// import hsc3 from "../assets/hsc3.jpg";
-// import hsc4 from "../assets/hsc4.jpg";
+import hsc3 from "../assets/hsc3.jpg";
+import hsc4 from "../assets/hsc4.jpg";
 import hsc5 from "../assets/hsc5.jpg";
 import mock from "../assets/mock.jpg";
 import rangoli from "../assets/rangoli.jpg";
 import secondyear from "../assets/secondyear.jpg";
 import thirdyear from "../assets/thirdyear.jpg";
 import xyz from "../assets/xyz.jpg";
+import hackathonWin from "../assets/HackathonWin.jpeg";
+import hackathonWin2 from "../assets/HackathonWin2.jpeg";
+import hackathonWin3 from "../assets/HackathonWin3.jpeg";
+import mockParliament from "../assets/MockParliament.jpeg";
+import felecitation from "../assets/Felecitation during the parents meet for been class topper.jpeg";
 
 const AwardsGallery = () => {
   /* ⭐ Add your images here */
@@ -53,14 +58,34 @@ const AwardsGallery = () => {
       url: hsc2,
       caption: "Received the award for securing First Position in HSC, presented by Hon. Ashutosh Kale Sir and Hon. Ankush Chaudhari Sir.",
     },
-    // {
-    //   url: hsc3,
-    //   caption: "Dedicated preparation during HSC days.",
-    // },
-    // {
-    //   url: hsc4,
-    //   caption: "Achievements that shaped my academic foundation.",
-    // },
+    {
+      url: hsc3,
+      caption: "Dedicated preparation during HSC days.",
+    },
+    {
+      url: hsc4,
+      caption: "Achievements that shaped my academic foundation.",
+    },
+    {
+      url: hackathonWin,
+      caption: "Celebrating a memorable hackathon victory - innovating and building solutions under pressure.",
+    },
+    {
+      url: hackathonWin2,
+      caption: "Proud moment winning the hackathon championship with an exceptional technical solution.",
+    },
+    {
+      url: hackathonWin3,
+      caption: "Hackathon success - showcasing our innovative project and dedication to problem-solving.",
+    },
+    {
+      url: mockParliament,
+      caption: "Participated in the Mock Parliament event, representing leadership and analytical thinking.",
+    },
+    {
+      url: felecitation,
+      caption: "Felicitated during the parents meet for achieving class topper status - a proud achievement for my family and me.",
+    },
   ];
 
   const [index, setIndex] = useState(0);
