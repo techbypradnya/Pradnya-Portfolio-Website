@@ -85,20 +85,20 @@ const Skills = () => {
 
         {/* Header */}
         <div
-          className={`text-center mb-16 transition-all duration-700 ${
+          className={`text-center mb-20 transition-all duration-700 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white">
-            Skills & Expertise
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
+            <span className="gradient-text">Skills & Expertise</span>
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 mt-3 text-lg">
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
             A perfect blend of technical skills, engineering excellence & human qualities.
           </p>
         </div>
 
         {/* TECHNICAL SKILLS */}
-        <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+        <h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 dark:text-white tracking-tight">
           Technical Skills
         </h3>
 
@@ -130,7 +130,7 @@ const Skills = () => {
         </div>
 
         {/* ENGINEERING SKILLS */}
-        <h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+        <h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 dark:text-white tracking-tight">
           Core Engineering Skills
         </h3>
 
@@ -161,36 +161,34 @@ const Skills = () => {
           ))}
         </div>
 
-       {/* INTERPERSONAL SKILLS — FIXED SINGLE ROW */}
-<h3 className="text-2xl font-bold mb-6 text-gray-800 dark:text-white">
+       {/* INTERPERSONAL SKILLS — RESPONSIVE GRID */}
+<h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-800 dark:text-white tracking-tight">
   Interpersonal Skills
 </h3>
 
-<div className="overflow-x-auto pb-4">
-  <div className="flex gap-6 min-w-max justify-center md:justify-between">
-    {softSkills.map((skill, index) => (
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+  {softSkills.map((skill, index) => (
+    <div
+      key={index}
+      className={`p-6 rounded-2xl shadow-lg transition-all duration-700 hover:scale-105 hover:shadow-xl bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-center ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+      style={{ transitionDelay: `${200 + index * 150}ms` }}
+    >
       <div
-        key={index}
-        className={`p-6 w-60 rounded-2xl shadow-lg transition-all duration-700 hover:scale-105 bg-white/80 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-center ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}
-        style={{ transitionDelay: `${200 + index * 150}ms` }}
+        className={`mx-auto mb-4 w-14 h-14 rounded-full flex items-center justify-center text-3xl text-white bg-gradient-to-br ${skill.color}`}
       >
-        <div
-          className={`mx-auto mb-4 w-14 h-14 rounded-full flex items-center justify-center text-3xl text-white bg-gradient-to-br ${skill.color}`}
-        >
-          {skill.emoji}
-        </div>
-
-        <h4 className="text-lg font-semibold text-gray-800 dark:text-white">
-          {skill.name}
-        </h4>
-        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-          {skill.desc}
-        </p>
+        {skill.emoji}
       </div>
-    ))}
-  </div>
+
+      <h4 className="text-lg font-semibold text-gray-800 dark:text-white mb-2">
+        {skill.name}
+      </h4>
+      <p className="text-sm text-gray-600 dark:text-gray-300">
+        {skill.desc}
+      </p>
+    </div>
+  ))}
 </div>
 
 

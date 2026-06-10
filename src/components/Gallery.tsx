@@ -105,13 +105,16 @@ const AwardsGallery = () => {
 
   return (
     <section className="py-24 bg-transparent" id="gallery">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8">
           <span className="gradient-text">Moments of Pride</span>
         </h2>
+        <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto mb-12">
+          A collection of achievements, milestones, and memorable moments that showcase growth and dedication
+        </p>
 
-        {/* ⭐ Carousel Container */}
-        <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden rounded-3xl">
+        {/* Carousel Container */}
+        <div className="relative w-full h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-3xl">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}

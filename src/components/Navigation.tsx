@@ -56,6 +56,7 @@ const Navigation = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setMobileMenuOpen(false);
+      setActiveSection(href.replace("#", ""));
     }
   };
 

@@ -169,6 +169,7 @@ const Hero = () => {
                 behavior: "smooth",
               });
             }}
+            aria-label="Scroll to About section"
             className="mt-12 inline-block"
           >
             <ChevronDown className="w-10 h-10 text-purple-600 dark:text-purple-400 animate-bounce" />

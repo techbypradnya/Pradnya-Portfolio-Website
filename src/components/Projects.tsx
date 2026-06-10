@@ -24,137 +24,90 @@ const Projects = () => {
     return () => observer.disconnect();
   }, []);
 
-  const projects = [
+  const allProjects = [
+    {
+      icon: Brain,
+      title: "Ask This Page – AI Chrome Extension",
+      description:
+        "Full-stack AI Chrome Extension converting webpages, PDFs, and videos into conversational chatbots using Gemini + RAG for intelligent information retrieval.",
+      tech: ["Chrome Extension", "Flask", "Gemini AI", "LangChain", "FAISS", "NLP"],
+      gradient: "from-violet-500 to-indigo-500",
+      code: "https://github.com/techbypradnya/smart_page_ai",
+      featured: true,
+    },
+    {
+      icon: Heart,
+      title: "CareerCompass AI",
+      description:
+        "AI-powered career guidance system analyzing skills and interests to recommend personalized career paths with intelligent insights.",
+      tech: ["AI", "Python", "ML Models", "Career Recommendation", "Data Analysis"],
+      gradient: "from-fuchsia-500 to-purple-500",
+      code: "https://github.com/techbypradnya/CareerCompass-AI",
+      featured: true,
+    },
+    {
+      icon: Database,
+      title: "Carbon Emission Analysis System",
+      description:
+        "DBMS analytics platform for storing and visualizing global CO₂ emission data using MySQL, Python, and Streamlit with interactive visualizations.",
+      tech: ["MySQL", "Python", "Streamlit", "Pandas", "Matplotlib"],
+      gradient: "from-green-600 to-emerald-500",
+      code: "https://github.com/techbypradnya/Carbon-Emission-Analysis-System",
+      featured: true,
+    },
     {
       icon: Droplets,
       title: "Smart Water Irrigation System",
       description:
-        "An intelligent irrigation system using Arduino, soil moisture sensing, and a relay-controlled water pump for efficient watering.",
-      tech: ["Arduino", "Soil Moisture Sensor", "Relay Module", "Water Pump", "Arduino IDE", "Embedded C"],
+        "Intelligent IoT irrigation system using Arduino and soil moisture sensors for efficient automated watering with relay control.",
+      tech: ["Arduino", "Soil Moisture Sensor", "Embedded C", "IoT"],
       gradient: "from-blue-500 to-cyan-500",
       code: "https://github.com/techbypradnya/Smart-Water-Irrigation-System/tree/main",
-      // demo: "https://your-demo-link.com",
+      featured: true,
     },
-{
-  icon: Brain,
-  title: "Ask This Page – AI Chrome Extension",
-  description:
-    "A full-stack AI Chrome Extension that turns any webpage, PDF, or YouTube video into a conversational chatbot using Gemini + RAG.",
-  tech: ["Chrome Extension", "Flask", "Gemini AI", "LangChain", "FAISS", "NLP"],
-  gradient: "from-violet-500 to-indigo-500",
-  code: "https://github.com/techbypradnya/smart_page_ai",
-  // demo: "https://youtu.be/B4ss3dL2DF0",
-},
-
-
     {
-  icon: Heart,
-  title: "CareerCompass AI",
-  description:
-    "An AI-powered career guidance system that analyzes user skills, interests, and goals to recommend personalized career paths using intelligent insights.",
-  tech: ["AI", "Python", "ML Models", "Career Recommendation", "Data Analysis"],
-  gradient: "from-fuchsia-500 to-purple-500",
-  code: "https://github.com/techbypradnya/CareerCompass-AI",
-  demo: "",
-},
-{
-  icon: ExternalLink,
-  title: "Personal Portfolio Website",
-  description:
-    "A stunning, animation-rich personal portfolio built with React and Tailwind CSS, showcasing projects, skills, and achievements with a modern UI/UX.",
-  tech: ["React", "Tailwind CSS", "Vite", "JavaScript", "Responsive Design"],
-  gradient: "from-purple-600 to-indigo-600",
-  code: "https://github.com/techbypradnya/your-portfolio-repo",
-  // demo: "https://your-portfolio-live-link.com",
-},
-
-{
-  icon: Heart,
-  title: "Nexus.AI – Intelligent Chatbot",
-  description:
-    "A Flask-based AI chatbot powered by NLP and machine learning, featuring a beautifully animated bird-themed interface for an immersive chat experience.",
-  tech: ["Python", "Flask", "NLP", "SpaCy", "Machine Learning", "Scikit-Learn"],
-  gradient: "from-rose-500 to-pink-600",
-  code: "https://github.com/techbypradnya/Nexus.AI-🤖-AI-Powered-Chatbot-using-Linear-Algebra-NLP-Nexus.AI",
-  demo: "",
-},
-
-
-    // {
-    //   icon: Database,
-    //   title: "Student Data & Score Management System",
-    //   description:
-    //     "A complete system for managing student details, grades, and performance insights.",
-    //   tech: ["Python", "Database", "Data Management"],
-    //   gradient: "from-purple-500 to-pink-500",
-    //   code: "https://github.com/YOUR_USERNAME/student-data-system",
-    //   demo: "https://your-demo-link.com",
-    // },
-
+      icon: Heart,
+      title: "Nexus.AI – Intelligent Chatbot",
+      description:
+        "Flask-based NLP chatbot with machine learning, featuring animated interface for immersive conversational experiences.",
+      tech: ["Python", "Flask", "NLP", "SpaCy", "Scikit-Learn"],
+      gradient: "from-rose-500 to-pink-600",
+      code: "https://github.com/techbypradnya/Nexus.AI-🤖-AI-Powered-Chatbot-using-Linear-Algebra-NLP-Nexus.AI",
+      featured: true,
+    },
+    {
+      icon: Database,
+      title: "Gemini Image Analysis App",
+      description:
+        "AI-powered image analysis leveraging Google Gemini API to extract intelligent insights and metadata from images.",
+      tech: ["Python", "AI", "Image Analysis", "Gemini API"],
+      gradient: "from-indigo-500 to-blue-500",
+      code: "https://github.com/techbypradnya/Gemini-Image-Analysis-Application",
+      featured: true,
+    },
     {
       icon: Heart,
       title: "Gemini Health App",
       description:
-        "An AI-powered health application using Google Gemini API for personalized wellness recommendations.",
+        "AI-powered health application using Google Gemini API for personalized wellness recommendations and health insights.",
       tech: ["AI", "Gemini API", "Healthcare", "Python"],
       gradient: "from-red-500 to-orange-500",
       code: "https://github.com/techbypradnya/Gemini-Health-App",
-      // demo: "https://your-demo-link.com",
+      featured: false,
     },
-     {
-  icon: Heart,
-  title: "Fitness Challenge App",
-  description:
-    "A Python-based app to manage fitness challenges, track progress, and motivate users towards their health goals.",
-  tech: ["Python", "Fitness Tracker", "Tkinter"],
-  gradient: "from-green-500 to-lime-500",
-  code: "https://github.com/techbypradnya/Fitness-challenge-app-python",
-  demo: "",
-},
-{
-  icon: Database,
-  title: "Gemini Image Analysis App",
-  description:
-    "An AI-powered image analysis application that uses Google Gemini to analyze and extract insights from images.",
-  tech: ["Python", "AI", "Image Analysis", "Gemini API"],
-  gradient: "from-indigo-500 to-blue-500",
-  code: "https://github.com/techbypradnya/Gemini-Image-Analysis-Application",
-  demo: "",
-},
-{
-  icon: Database,
-  title: "Carbon Emission Analysis System",
-  description:
-    "A DBMS-based analytics system that stores and visualizes global CO₂ emission data using MySQL, Python, and Streamlit.",
-  tech: ["MySQL", "Python", "Streamlit", "Pandas", "Matplotlib", "SQLAlchemy"],
-  gradient: "from-green-600 to-emerald-500",
-  code: "https://github.com/techbypradnya/Carbon-Emission-Analysis-System",
-  demo: "",
-},
-
-
-    // {
-    //   icon: Music,
-    //   title: "Media Player in C with SDL2",
-    //   description:
-    //     "A multimedia player built in C using SDL2, supporting multiple audio formats.",
-    //   tech: ["C", "SDL2", "Multimedia", "Systems Programming"],
-    //   gradient: "from-indigo-500 to-purple-500",
-    //   code: "https://github.com/YOUR_USERNAME/media-player-sdl2",
-    //   demo: "https://your-demo-link.com",
-    // },
-
-    // {
-    //   icon: BookOpen,
-    //   title: "Library Management System",
-    //   description:
-    //     "A management tool for book cataloging, issuing, and returning with automated reminders.",
-    //   tech: ["Database", "Python", "System Design"],
-    //   gradient: "from-green-500 to-teal-500",
-    //   code: "https://github.com/YOUR_USERNAME/library-management",
-    //   demo: "https://your-demo-link.com",
-    // },
+    {
+      icon: Heart,
+      title: "Fitness Challenge App",
+      description:
+        "Python-based fitness tracking application managing challenges, progress tracking, and user motivation towards health goals.",
+      tech: ["Python", "Tkinter", "Fitness Tracker"],
+      gradient: "from-green-500 to-lime-500",
+      code: "https://github.com/techbypradnya/Fitness-challenge-app-python",
+      featured: false,
+    },
   ];
+
+  const projects = allProjects.filter((p) => p.featured);
 
   return (
     <section
@@ -165,15 +118,15 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
+          className={`text-center mb-20 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="gradient-text">Featured Projects</span>
           </h2>
-          <p className="text-gray-600 dark:text-gray-300 text-lg">
-            Building innovative solutions to real-world problems
+          <p className="text-gray-600 dark:text-gray-300 text-lg max-w-3xl mx-auto">
+            Building innovative solutions to real-world problems with cutting-edge technologies
           </p>
         </div>
 
@@ -181,7 +134,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`glass p-6 rounded-2xl group hover:scale-105 transition-all duration-500 cursor-pointer ${
+              className={`glass p-6 rounded-2xl group hover:scale-105 hover:shadow-2xl transition-all duration-500 cursor-pointer h-full flex flex-col ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
               }`}
               style={{ transitionDelay: `${index * 150}ms` }}
@@ -192,11 +145,11 @@ const Projects = () => {
                 <project.icon className="w-8 h-8 text-white" />
               </div>
 
-              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3">
+              <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-3 line-clamp-2">
                 {project.title}
               </h3>
 
-              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed text-sm flex-grow">
                 {project.description}
               </p>
 
@@ -205,7 +158,7 @@ const Projects = () => {
                 {project.tech.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-sm font-medium"
+                    className="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-300 rounded-full text-xs font-medium"
                   >
                     {tech}
                   </span>
@@ -213,12 +166,13 @@ const Projects = () => {
               </div>
 
               {/* Code & Demo Buttons */}
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 pt-4 border-t border-white/10">
                 {project.code && (
                   <a
                     href={project.code}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View ${project.title} source code`}
                     className="flex items-center space-x-2 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
                   >
                     <Github className="w-5 h-5" />
@@ -231,6 +185,7 @@ const Projects = () => {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label={`View ${project.title} demo`}
                     className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
                     <ExternalLink className="w-5 h-5" />

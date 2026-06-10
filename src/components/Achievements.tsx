@@ -142,7 +142,7 @@ const Achievements = () => {
     <section id="achievements" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-center text-4xl md:text-5xl font-bold gradient-text mb-10">
+        <h2 className="text-center text-4xl md:text-5xl font-bold gradient-text mb-12">
           Achievements & Recognition
         </h2>
 
