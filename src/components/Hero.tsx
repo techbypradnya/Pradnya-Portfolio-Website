@@ -39,7 +39,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src={myphoto}
-                    alt="Pradnya Pangavhane"
+                    alt="Profile photo of Pradnya Shailendra Pangavhane"
                     className="w-full h-full object-cover object-center scale-105"
                   />
                 </div>
@@ -84,26 +84,33 @@ const Hero = () => {
                 icon: <Github className="w-6 h-6" />,
                 link: "https://github.com/techbypradnya",
                 glow: "hover:shadow-purple-500/50",
+                label: "GitHub",
               },
               {
                 icon: <Linkedin className="w-6 h-6" />,
                 link: "https://linkedin.com/in/pradnya-pangavhane-446793289",
                 glow: "hover:shadow-blue-500/50",
+                label: "LinkedIn",
               },
               {
                 icon: <Instagram className="w-6 h-6" />,
                 link: "https://www.instagram.com/pradnyapangavhane._?igsh=MWdmemxvamQxczlhYg==",
                 glow: "hover:shadow-pink-500/50",
+                label: "Instagram",
               },
             ].map((item, index) => (
               <a
                 key={index}
                 href={item.link}
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label={item.label}
+                title={item.label}
                 className={`p-3 glass rounded-full transition-all duration-300 ${item.glow}
                 hover:scale-125 hover:-rotate-6 hover:bg-gradient-to-br from-purple-500/20 to-blue-500/20`}
               >
                 {item.icon}
+                <span className="sr-only">{item.label}</span>
               </a>
             ))}
           </div>
@@ -117,6 +124,9 @@ const Hero = () => {
             <a
               href="https://leetcode.com/u/Pradnya_Pangavhane_/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LeetCode profile"
+              title="LeetCode - Pradnya_Pangavhane_"
               className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
             >
               LeetCode
@@ -124,6 +134,9 @@ const Hero = () => {
             <a
               href="https://www.hackerrank.com/profile/pradnyapangavha2"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="HackerRank profile"
+              title="HackerRank - pradnyapangavha2"
               className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
             >
               HackerRank
@@ -131,6 +144,9 @@ const Hero = () => {
             <a
               href="https://www.codechef.com/users/pradnya_001"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="CodeChef profile"
+              title="CodeChef - pradnya_001"
               className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
             >
               CodeChef
@@ -138,6 +154,9 @@ const Hero = () => {
             <a
               href="https://www.geeksforgeeks.org/user/pradnyapanmrwx/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GeeksforGeeks profile"
+              title="GfG - pradnyapanmrwx"
               className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
             >
               GFG
@@ -150,14 +169,16 @@ const Hero = () => {
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-           <a
-  href="/Pradnya_Pangavhane_CV.pdf"
-  download="Pradnya_Pangavhane_CV.pdf"
-  className="px-8 py-3 font-semibold rounded-full gradient-purple-blue text-white shadow-lg shadow-purple-500/30 hover:scale-105 hover:shadow-purple-500/50 inline-flex items-center gap-2"
->
-  <FileDown className="w-5 h-5" />
-  Download My CV
-</a>
+          <a
+            href="/Pradnya_Pangavhane_CV.pdf"
+            download="Pradnya_Pangavhane_CV.pdf"
+            aria-label="Download Pradnya Pangavhane CV"
+            title="Download CV - Pradnya Pangavhane"
+            className="px-8 py-3 font-semibold rounded-full gradient-purple-blue text-white shadow-lg shadow-purple-500/30 hover:scale-105 hover:shadow-purple-500/50 inline-flex items-center gap-2"
+          >
+            <FileDown className="w-5 h-5" />
+            Download My CV
+          </a>
           </div>
 
           {/* Scroll Down */}
