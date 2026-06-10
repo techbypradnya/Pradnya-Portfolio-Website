@@ -4,6 +4,14 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
     {
+      role: "Full Stack Developer Intern",
+      org: "Drushya India Pvt. Ltd.",
+      duration: "June 2026 – September 2026",
+      description:
+        "Developed and maintained responsive web applications. Worked on both frontend and backend development. Implemented user-friendly features and optimized website performance. Collaborated with the development team using Git and GitHub. Gained hands-on experience in full-stack web development and software engineering.",
+      color: "from-cyan-500 to-blue-600",
+    },
+    {
       role: "AI/ML Domain Expert",
       org: "AWS Cloud Club - Sanjivani College of Engineering",
       duration: "2024",

@@ -18,6 +18,8 @@ import hackathonWin2 from "../assets/HackathonWin2.jpeg";
 import hackathonWin3 from "../assets/HackathonWin3.jpeg";
 import mockParliament from "../assets/MockParliament.jpeg";
 import felecitation from "../assets/Felecitation during the parents meet for been class topper.jpeg";
+import pradnyaProfile from "../assets/Pradnya_Profile.jpeg";
+import pradnyaProfileAlt from "../assets/Pradnya Profile.jpg";
 
 const AwardsGallery = () => {
   /* ⭐ Add your images here */
@@ -85,6 +87,14 @@ const AwardsGallery = () => {
     {
       url: felecitation,
       caption: "Felicitated during the parents meet for achieving class topper status - a proud achievement for my family and me.",
+    },
+    {
+      url: pradnyaProfile,
+      caption: "Professional portrait - Ready to make an impact in the tech industry.",
+    },
+    {
+      url: pradnyaProfileAlt,
+      caption: "A moment of confidence and determination in my professional journey.",
     },
   ];
 

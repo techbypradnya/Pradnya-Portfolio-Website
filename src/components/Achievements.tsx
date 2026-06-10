@@ -66,6 +66,13 @@ const Achievements = () => {
         color: "from-amber-500 to-yellow-600",
         year: "2024",
       },
+      {
+        icon: Award,
+        title: "Industrial Training & Professional Development",
+        subtitle: "Data Analytics • AI • Cloud Computing • Certifications from Godrej, AWS, IBM & more",
+        color: "from-blue-500 to-cyan-500",
+        year: "2024–2026",
+      },
     ],
 
     competitive: [
