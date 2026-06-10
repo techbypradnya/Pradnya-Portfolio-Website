@@ -126,7 +126,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               aria-label="LeetCode profile"
               title="LeetCode - Pradnya_Pangavhane_"
-              className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
+              className="px-5 py-2 rounded-full glass text-gray-700 dark:text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
             >
               LeetCode
             </a>
@@ -136,7 +136,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               aria-label="HackerRank profile"
               title="HackerRank - pradnyapangavha2"
-              className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
+              className="px-5 py-2 rounded-full glass text-gray-700 dark:text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
             >
               HackerRank
             </a>
@@ -146,7 +146,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               aria-label="CodeChef profile"
               title="CodeChef - pradnya_001"
-              className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
+              className="px-5 py-2 rounded-full glass text-gray-700 dark:text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
             >
               CodeChef
             </a>
@@ -156,7 +156,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               aria-label="GeeksforGeeks profile"
               title="GfG - pradnyapanmrwx"
-              className="px-5 py-2 rounded-full glass text-gray-200 hover:gradient-purple-blue"
+              className="px-5 py-2 rounded-full glass text-gray-700 dark:text-gray-200 hover:gradient-purple-blue hover:text-white transition-all"
             >
               GFG
             </a>
